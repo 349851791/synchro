@@ -55,6 +55,18 @@
     <Content Include="01_oracle命令\oracle_版本.txt" />
     <Content Include="01_oracle命令\oracle_用户密码过期.txt" />
     <Content Include="01_oracle命令\查询数据时,直接显示序号.txt" />
+    <Content Include="02_素材\3D滚动盒子样式翻滚图片\1.jpg" />
+    <Content Include="02_素材\3D滚动盒子样式翻滚图片\2.jpg" />
+    <Content Include="02_素材\3D滚动盒子样式翻滚图片\3.jpg" />
+    <Content Include="02_素材\3D滚动盒子样式翻滚图片\4.jpg" />
+    <Content Include="02_素材\3D滚动盒子样式翻滚图片\5.jpg" />
+    <Content Include="02_素材\3D滚动盒子样式翻滚图片\6.jpg" />
+    <Content Include="02_素材\3D滚动盒子样式翻滚图片\7.jpg" />
+    <Content Include="02_素材\3D滚动盒子样式翻滚图片\css\style.css" />
+    <Content Include="02_素材\3D滚动盒子样式翻滚图片\index.html" />
+    <Content Include="02_素材\3D滚动盒子样式翻滚图片\js\index.js" />
+    <Content Include="02_素材\3D滚动盒子样式翻滚图片\js\jquery.js" />
+    <Content Include="02_素材\3D滚动盒子样式翻滚图片\js\modernizr.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
