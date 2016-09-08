@@ -1,0 +1,81 @@
+html{ height:100%; overflow:auto; font-size:62.5%; font-family:SimSun, Arial, Helvetica, sans-serif;}
+body{ font-size:1.2em;}
+body,p,.ul{ padding:0; margin:0;}
+.fullRoot,.fullRoot>body,.fullRoot form{ height:100%; overflow:hidden;}
+.hide{ display:none;}
+.hidden{ overflow:hidden;}
+.ul{ list-style-type:none;}
+header,section,footer{ display:block;}
+/* TableBody 普通表单 */
+.TableBody{ width:98%; margin:0 auto; border-collapse:collapse;}
+.TableBody caption{ font-size:2em;}
+.TableBody,.TableBody td{ border:1px solid #a4d0eb;}
+.TableBody td{  height:30px; padding:2px;line-height:24px;}
+.TableBody .textLeft{ text-align:left;}
+.TableBody .textRight{ text-align:right;}
+.TableBody input[type="text"],.TableBody input[type="password"]{ }
+.TableBody textarea {width:98%}
+/*有标题头的TableBody（如：需求变更查询）*/
+.TableBody tr.header td {background-color:#d6f0ff;font-size:16px;text-align:center;padding:5px 0 4px;color:#3E587B;}
+.TableBody td.leftTd,.TableBody td.centerTd{background-color:#F0F0F0;color:#3E587B;}
+.TableBody td.leftTd {text-align:right;min-width:100px;padding-left:0;padding-right:6px;}
+.TableBody td.centerTd {text-align:center;padding-left:2px;}
+.divButtonCenter {text-align:center;padding:10px 0;}
+.tableNav {display:none}
+.divMsg {height:40px;text-align:center}
+.TableBody iframe {margin:0;}
+/*表格套表格*/
+.TableBody td.trapTd {padding:0;border:none}
+.TableBody td.trapTd .TableBody,.TableBody td.trapTd .GridBody {width:100%;border-width:0;}
+.TableBody td.trapTd .TableBody td,.TableBody td.trapTd .GridBody td {border-width:1px 0 0 1px;}
+.TableBody td.trapTd .TableBody tr:first-child td.centerTd,.TableBody td.trapTd .GridBody tr:first-child td.centerTd { border-top-width:0;}
+.TableBody td.trapTd .TableBody td:first-child,.TableBody td.trapTd .GridBody td:first-child { border-left-width:0;}
+.TableBody.marginTop-1,.GridBody.marginTop-1  {margin-top:-1px;}
+.TableBodyTop20{margin-top:20px; }
+.TableBody tr.centerTr td,.centerTable td {text-align:center}
+/* GridBody 普通表单 */
+.GridBody{ width:98%; margin:0 auto; border-collapse:collapse; text-align:center;}
+.GridBody,.GridBody th,.GridBody td{ border:1px solid #a4d0eb; font-size:12px; color:#333333;}
+.GridBody td{ height:30px;line-height:20px;}
+.GridBody tr {cursor:pointer; }
+.GridBody tr:hover td{color:#3192d7; background:#f0f0f0; }
+.GridBody tr.Header>*,.GridBody tr:first-child>*{ height:28px; line-height:22px; font-size:14px; background-color:#d6f0ff; color:#3f577d;}
+.GridBody tr.Header td,.GridBody tr.Header:hover td {background-color:#d6f0ff;color:#3f577d;}
+.GridBody tr.Header td>a{text-decoration:none; color:#3f577d; }
+.GridBody input[type="text"]{ width:98%;}
+.GridBody td.tdLeft,.GridBody td.GridBodyTdAlign {text-align:left;padding-left:2px;}
+/* TableSpac 仿边框表单[可用于表格在ie10中出现的边框问题,但要注意该显示的边框并不是真正的边框]  */
+.TableSpac{ border-collapse:separate; border-spacing:1px; background-color:#a4d0eb;}
+.TableSpac,.TableSpac td{ border-width:0;}
+.TableSpac td,.TableSpac th{ background-color:#fff;}
+/* input,textarea,button */
+textarea{ overflow-y:auto;}
+input[type="button"],input[type="submit"],input[type="reset"]{ height:24px; line-height:24px; padding:0; border:1px solid #D3D3D3; cursor:pointer;}
+input[type="text"],input[type="password"],textarea, select{border:1px solid #D3D3D3;}
+select {height:22px;}
+input[type="text"], input[type="password"] {height:20px;line-height:20px;}
+input.button,input.Button, input.PublicButton, input.QueryButton { background-color:#3192d8; padding:0 10px;*padding:0 2px; font-weight:normal;border:1px solid #0a59a4; height:24px; line-height:24px;*line-height:22px;color:#fff;outline:none;margin:0;overflow:hidden}
+:root input.button, :root input.Button, :root input.PublicButton, :root input.QueryButton {line-height:normal}
+input.inputName {width:60px;}
+input.inputTime {width:80px;}
+/* divSeach */
+/*.divSeach { background-color:#f0f0f0; border-bottom:1px solid #dbdbdb; padding:8px 10px 10px 15px; margin-bottom:10px; position:relative; }
+.divSeach .btns { position:absolute; right:10px; top:9px; }
+.divSeach ul li {line-height:21px; }*/
+a.button, span.button { display:inline-block; background-color:#3192d8; padding:0 10px;*padding:0 2px; font-weight:normal;border:1px solid #0a59a4; height:22px; line-height:22px; color:#fff;outline:none; text-decoration:none;}
+/*TreeView*/
+div.TreeView { border-color:#a4d0eb; }
+/*系统管理页面头部隐藏*/
+.SystemManagTitle { display:none; }
+
+/*编辑与删除图片替换*/
+img[src="/tlwoawebv2/Portal/Themes/Resource/images/Edit.gif"], .zx_CodeImageXG { width:0; height:16px; padding-left:16px; vertical-align:middle; background:url(images/edit.png) center center no-repeat; }
+input[src="/tlwoawebv2/Portal/Themes/Resource/images/Delete.gif"], .zx_CodeImage { width:0; height:16px; padding-left:16px; vertical-align:middle; background:url(images/chacha.png) center center no-repeat; }
+/*表单输入框状态样式*/
+input.required,select.required,textarea.required {border:1px solid #D3D3D3!important;background-color:#ffe5e5;}
+input.readonly,select.readonly,textarea.readonly {background-color:#efefef;}
+
+/*按钮*/
+.LongPublicButton { width: 107px; height: 21px;  }
+a.LongPublicButton{display:inline-block;text-decoration:none;line-height:22px;width:97px;}
+a.LongPublicButton:hover{color:#262626}

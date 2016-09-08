@@ -1,0 +1,254 @@
+/* Login */
+html.loginroot { overflow:auto; }
+html.loginroot>body.overflow { overflow:visible; }
+html.loginroot>body>form#form1 { padding:0; }
+#divLogin { height:100%; margin:0 auto; background-color:#f0f0f0; overflow:hidden; position:relative; }
+.loginBack { width:100%; height:475px; position:absolute; left:0; top:0; z-index:0; }
+#divLogin .outer { padding:0 85px 0 70px; position:absolute; top:50%; margin-top:-203px; left:50%; margin-left:-357px; width:560px; height:406px; }
+#divLogin .outerLeft { background:url(images/blueBL.png) no-repeat; width:70px; height:100%; position:absolute; left:0; top:0; }
+#divLogin .outerRight { background:url(images/blueBR.png) no-repeat; width:85px; height:100%; position:absolute; right:0; top:0; }
+#divLogin .inner { background:url(images/blueBT.png) repeat-x; height:100%; }
+#divLogin .inner .innerText { background:url(images/loginLogo.png) no-repeat; height:120px; position:relative; top:40px; left:-30px; }
+#divLogin .inner .innerEarth { background:url(images/loginEarth.png) no-repeat; width:352px; height:398px; position:absolute; left:500px; top:-80px; }
+#divLogin .inner .innerDivide { background:url(images/loginDivide.png) no-repeat; width:518px; height:2px; }
+
+#divLogin .login { margin-top:30px; }
+.id-div, .pw-div { height:60px; }
+.id-div .ID, .pw-div .Password { width:137px; padding-right:23px; text-align:right; line-height:32px; color:#fff; font-size:14px; font-weight:bold; float:left; }
+.id-div .IDInput, .pw-div .PasswordInput { margin:0 6px; width:264px; height:32px; background:url(images/loginInT.png) repeat-x; float:left; position:relative; }
+.id-div .IDInput .inputL, .id-div .IDInput .inputR, .pw-div .PasswordInput .inputL, .pw-div .PasswordInput .inputR { width:6px; height:32px; position:absolute; top:0; }
+.id-div .IDInput .inputL, .pw-div .PasswordInput .inputL { background:url(images/loginInL.png) no-repeat; left:0; }
+.id-div .IDInput .inputR, .pw-div .PasswordInput .inputR { background:url(images/loginInR.png) no-repeat; right:0; }
+.id-div .IDInput:before, .id-div .IDInput:after, .pw-div .PasswordInput:before, .pw-div .PasswordInput:after { content:""; width:6px; height:32px; position:absolute; top:0; }
+.id-div .IDInput:before, .pw-div .PasswordInput:before { background:url(images/loginInL.png) no-repeat; left:0; }
+.id-div .IDInput:after, .pw-div .PasswordInput:after { background:url(images/loginInR.png) no-repeat; right:0; }
+.id-div .idIcon, .pw-div .pwdIcon { position:absolute; left:6px; top:8px; width:18px; height:18px; }
+.id-div input { background:url(images/idIcon.png) no-repeat 5px 50%; }
+.pw-div input { background:url(images/pwdIcon.png) no-repeat 5px 50%; }
+.id-div input, .pw-div input { border:none; background-color:transparent; padding:0 3px 0 0;width:217px; height:28px; line-height:28px; margin:3px 0 0 0; padding-left:30px; font-size:14px; }
+.checkDiv { display:none; }
+.storeCookieDiv  { padding-left:165px; color:#fff; font-size:12px; font-weight:bold; height:25px; }
+.storeCookieDiv  input[type="checkbox"] { vertical-align:top; margin:5px 3px 3px 3px; padding:0; }
+.storeCookieDiv  label { vertical-align:top; display:inline-block; *display:inline; *zoom:1; padding-top:5px; *padding-top:10px; }
+.btn-div { margin-top:10px; padding-left:165px; font-size:0; }
+.btn-div .LoginButton, .btn-div .CloseButton { display:inline-block; *display:inline; *zoom:1; background:url(images/loginBtnC.png) no-repeat; margin-right:15px; }
+.btn-div .LoginButton:hover, .btn-div .CloseButton:hover { background:url(images/loginBtn.png) no-repeat; }
+.btn-div .LoginButton input[type="submit"], .btn-div .CloseButton input[type="submit"] { width:125px; height:40px; border:none; cursor:pointer; font-size:0; color:Transparent; }
+.btn-div .LoginButton input[type="submit"] { background:url(images/loginTxLogin.png) no-repeat 50% 50%; }
+.btn-div .CloseButton input[type="submit"] { background:url(images/loginTxQuit.png) no-repeat 50% 50%; }
+#divLogin .outBottom { background:url(images/loginBtm.png) repeat-x; position:fixed; bottom:0; left:0; height:50px; width:100%; color:#2683d0; padding-top:30px; background-color:#f0f0f0; text-align:center; }
+#divLogin .outBottom span { margin-left:50px; }
+
+/* Index */
+html.homeroot{ *overflow:auto; }
+html.homeroot>body{ padding:153px 0 42px; -moz-box-sizing:border-box; box-sizing:border-box; position:relative; *padding:0; }
+#header{ width:100%;position:absolute; top:0; left:0; background:url(images/head_bg.jpg) repeat-x 0 0;z-index:3;overflow:hidden;height:153px;}
+#header>.topArea{ height:113px;background:url(images/top_bg.png) no-repeat right 0;position:relative}
+#header>.topArea .logo {background:url(images/logo.png) no-repeat 0 50%;height:96px;}
+#header>.topArea .user {min-width:294px;height:54px;background:url(images/user_bg.png) no-repeat right 0;position:absolute;right:0;top:22px;text-align:right;font-size:0;padding-right:20px;}
+#header > .topArea .user > div {display:inline-block;*display:inline;*zoom:1;height:54px;vertical-align:top}
+#header>.topArea .user .icon {background:url(images/user_icon.png) no-repeat 0 6px;width:44px;}
+#header>.topArea .user .font {font-size:16px;font-family:'Microsoft YaHei';line-height:54px;color:#ffffff;padding-left:8px;min-width:180px;}
+#header .topToolbar {position:absolute;right:8px;bottom:3px; z-index:2; }
+#header .topToolbar li {float:left;position:relative;height:30px;margin:0 10px;cursor:pointer}
+#header .topToolbar li span {width:20px;height:30px;display:inline-block;background-position:50% 50%;background-repeat:no-repeat;}
+#header .topToolbar li.help span{background-image:url(images/help.png);}
+#header .topToolbar li.Logout span{background-image:url(images/Logout.png);}
+#header .topToolbar li.close span{background-image:url(images/close.png);}
+#header .topToolbar li.huanf span{ background:url(images/huanf.png) no-repeat center 5px;}
+#header .topToolbar li:hover{background:url(images/sl_c.png) repeat-x 0 0;}
+#header .topToolbar li:hover .left,#header .topToolbar li:hover .right{ height:30px; width:8px; position:absolute; top:0; content:"";}
+#header .topToolbar li:hover .left {background:url(images/sl_l.png) no-repeat 0 0; left:-8px;}
+#header .topToolbar li:hover .right {background:url(images/sl_r.png) no-repeat 0 0; right:-8px;}
+
+#header>.menuArea{}
+#header>.menuArea .bg{background:url(images/tbls.png) repeat-x;height:6px;}
+/*#header > .menuArea:before { background:url(images/tbls.png) repeat-x;  content:''; height:6px; width:100%; display:block;}*/
+.header .tapArea{ height:32px; width:100%; position:absolute;/*top:79px;*/left:0;z-index:1;}
+.header .tapArea .tapLeft, .header .tapArea .tapRight { position:absolute; top:-29px; width:32px; height:32px; line-height:32px; font-size:12px; cursor:pointer; text-align:center; color:#fff; }
+.header .tapArea .tapLeft { left:7px; }
+.header .tapArea .tapRight {right:160px;  }
+.header .tapArea .tapBorder { margin:-29px 190px 0 38px; overflow:hidden; position:relative; }
+.header .tapArea .ul {background:url(images/tapArea_l_s.png) no-repeat 1px 0;font-size: 0;white-space: nowrap; display:inline-block; *display:inline; *zoom:1; *padding-left:9px; }
+.header .tapArea .ul li{ display:inline-block; *display:inline; *zoom:1; background:url(images/tapArea_c.png) repeat-x 0 0;position:relative;margin:0 10px;height:30px;line-height:30px;font-size:14px;color:#152840;padding:2px 2px 0 2px;cursor:pointer;border:0;text-align:center;}
+.header .tapArea .ul span {display:none;}
+.header .tapArea .ul li span {display:none;width:15px;height:15px;background:url(images/tapArea_x.png) no-repeat 0 0;position:absolute;top:4px;right:-12px;z-index:2;}
+.header .tapArea .ul li:hover span { display:block; }
+.header .tapArea .ul li.index {padding:2px 0 0 0;}
+.header .tapArea .ul li.sl,.header .tapArea .ul li:hover/*,.header .tapArea .ul li.index*/ {background-image:url(images/tapArea_c_s.png)}
+.header .tapArea .ul li.index { padding-left:20px; }
+.header .tapArea .ul li.index .icon { position:absolute; left:1px; top:8px; background:url(images/index.png); width:16px; height:16px; }
+
+.header .lastMenu{FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ffffff,endColorStr=#D4D4D4);background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#D4D4D4));background:-ms-linear-gradient(top,#ffffff,#D4D4D4);background:-moz-linear-gradient(top,#ffffff,#D4D4D4);padding:0px 38px 3px;position:relative;border-top:1px solid #11487E;min-height:30px;}
+.header .lastMenu>.ul {height:30px; font-size:0;overflow:hidden;display:inline-block;}
+.header .lastMenu .ul li{height:30px;line-height:30px;margin:0 10px 0 10px;display:inline-block;*display:inline;zoom:1;font-size:12px;position:relative;text-align:center;color:#3d587b;cursor:pointer;padding-right:8px;}
+.header .lastMenu .ul li span {display:block;width:6em;}
+.header .lastMenu .ul li:hover span,.header .lastMenu .ul li.sl span {background:url(images/sl_c.png) repeat-x right 0; }
+.header .lastMenu .ul li:hover,.header .lastMenu .ul li.sl {background:url(images/sl_r.png) no-repeat right 0;}
+
+#section{ height:100%; padding-left:43px; position:relative; z-index:2; overflow:hidden;}
+#section #coverMain { width:100%; height:100%; display:none; position:absolute; left:0; top:0; z-index:3; background-image:url(#); }
+#section>.leftArea{ width:43px; height:100%; position:absolute; top:0; left:0; background-color:#fff;overflow:hidden; z-index:4;}
+#section>.leftArea.hover{ width:180px;overflow:visible}
+.oneMenuArea {position:relative;height:100%;background-color:#e5e5e5;}
+.oneMenuArea>.moveTop,.oneMenuArea>.moveBottom {height:16px;background:url(images/move_bg.png) repeat-x 0 0;position:relative;cursor:pointer;z-index:2;}
+.oneMenuArea > .moveBottom {position:absolute;bottom:0;left:0;width:100%}
+.oneMenuArea .MenuLevel-1 {overflow:hidden;margin-top:0px;}
+
+.oneMenuArea .MenuLevel-1>li{background:url(images/oneMenu_bg.png) repeat-x 0 0;height:43px;color:#152840;line-height:42px;font-size:14px;padding:2px 0 0 9px;cursor:pointer;white-space:nowrap;overflow:hidden}
+.oneMenuArea .MenuLevel-1 > li span.icon {width:25px;height:25px;background:url(images/menue.png) no-repeat;float:left;margin-right:11px;position:relative;top:6px; margin:0px 12px 10px 0px}
+
+
+
+.oneMenuArea .MenuLevel-1 > li:hover,.hover>.oneMenuArea>.MenuLevel-1 > li.sl  {background:#3192D7;color:#ffffff}
+.oneMenuArea .divMenuLevel-2 { background-color:#F0F0F0;display:none;width:160px;position:absolute;top:0;left:100%;overflow:auto;overflow-x:hidden;height:100%;}
+.oneMenuArea .MenuLevel-2 {color:#152840;padding:0 1px;position:relative;min-height:100%; }
+.oneMenuArea .MenuLevel-1>li.sl .divMenuLevel-2 {display:block;}
+.oneMenuArea .MenuLevel-2>li {position:relative;line-height:36px;background:url(images/MenuLevel-2_i.png) no-repeat 10px 14px;padding:0 30px 0 26px; overflow:hidden; }
+.oneMenuArea .MenuLevel-2>li>span { display:block; width:100%; overflow:hidden; white-space:nowrap; text-overflow:clip; }
+.oneMenuArea .MenuLevel-2>li:hover,.oneMenuArea .MenuLevel-2>li.sl {background-image:url(images/MenuLevel-2_i_sl.png);color:#ffffff;background-color:#3192D7;}
+.oneMenuArea .MenuLevel-3 {background-color:#F0F0F0;color:#152840;position:relative;display:none}
+.oneMenuArea .MenuLevel-2>li.sl .MenuLevel-3 {display:block}
+.oneMenuArea .MenuLevel-3 > li {font-size:12px;line-height:30px;display:block;background:url(images/MenuLevel-3_i.png) no-repeat 0 50%;padding-left:12px;overflow:hidden; white-space:nowrap; text-overflow:clip; }
+.oneMenuArea .MenuLevel-3 > li:hover,.oneMenuArea .MenuLevel-3 > li.sl {background-image:url(images/MenuLevel-3_i_sl.png);color:#3194D8}
+
+#section>.rightArea{ height:100%;}
+
+#footer{ width:100%; height:42px; position:absolute; bottom:0; background:url(images/footer_bg.png) repeat-x 0 0;z-index:3;}
+#footer .footToolbar {overflow:hidden;font-size:0;height:100%;text-align:right}
+#footer .footToolbar li {display:inline-block;*display:inline;*zoom:1;margin:8px 12px 0 0;position:relative;cursor:pointer}
+#footer .footToolbar li span {width:29px;height:29px;background:none no-repeat 0 0;display:inline-block}
+#footer .footToolbar li.message span {background-image:url(images/message.png);}
+#footer .footToolbar li.information span {background-image:url(images/information.png);}
+#footer .footToolbar li:hover{background:url(images/sl_c.png) repeat-x 0 0;}
+#footer .footToolbar li:hover .left,#footer .footToolbar li:hover .right{ height:30px; width:6px; position:absolute; top:0; content:"";}
+#footer .footToolbar li:hover .left {background:url(images/sl_l.png) no-repeat 0 0; left:-6px;}
+#footer .footToolbar li:hover .right {background:url(images/sl_r.png) no-repeat right 0; right:-6px;}
+
+/* ie7 兼容 */
+.header .tapArea .ul li.sl, .header .tapArea .ul li:hover, .header .tapArea .ul li.index { }
+.header .tapArea .ul li .liRight, .header .tapArea .ul li .liLeft { width:9px; height:30px; position:absolute; top:0; }
+.header .tapArea .ul li .liRight { right:-9px; background:url(images/tapArea_r.png); }
+.header .tapArea .ul li .liLeft { left:-9px; background:url(images/tapArea_l.png); }
+.header .tapArea .ul li.sl .liRight,.header .tapArea .ul li:hover .liRight { background-image:url(images/tapArea_r_s.png); }
+.header .tapArea .ul li.sl .liLeft, .header .tapArea .ul li:hover .liLeft { background-image:url(images/tapArea_l_s.png); }
+
+.header .lastMenu .ul li .divide {background:url(images/menu_line.png) no-repeat right 0;content:"";height:30px;width:2px;position:absolute;top:0;left:-15px;}
+.header .lastMenu .lastMbefore {position:absolute;left:0;bottom:0px;width:100%;height:6px;background:url(images/lastMenu_bg.png) repeat-x 0 0;content:"";*background-color:#fff;}
+.header .lastMenu .ul li:hover .hoverL,.header .lastMenu .ul li.sl .hoverL { background:url(images/sl_l.png) no-repeat 0 0;content:"";height:30px;width:8px;position:absolute;top:0;left:-8px;}
+.header .lastMenu { *height:30px; }
+.header .lastMenu .ul { *position:relative; }
+
+.section { *top:153px; }
+
+.oneMenuArea>.moveTop .mbtn,.oneMenuArea>.moveBottom .mbtn{width:33px;height:13px;background:url(images/move_top.png) no-repeat 0 0;position:absolute;top:0px;left:50%;margin-left:-16px;content:"";}
+.oneMenuArea .moveTop.useless,.oneMenuArea .moveBottom.useless { cursor:default; }
+.oneMenuArea .moveTop.useless .mbtn,.oneMenuArea .moveBottom.useless .mbtn { opacity:0.5; filter:Alpha(opacity=50); }
+.oneMenuArea>.moveBottom .mbtn {background-image:url(images/move_bottom.png);top:2px;}
+
+.oneMenuArea .MenuLevel-1 > li>.arrow { display:none; width:9px;height:14px;background:url(images/MenuLevel-1_r.png) no-repeat 0 0;float:right;position:relative;top:14px;margin-right:10px;}
+.leftArea:hover .oneMenuArea .MenuLevel-1 > li>.arrow { display:block; }
+.oneMenuArea .MenuLevel-1 > li:hover>.arrow,.oneMenuArea .MenuLevel-1 > li.sl>.arrow {background-image:url(images/MenuLevel-1_r_sl.png)}
+.hover>.empty{background:url(images/MenuLevel-1_y_r.png) repeat-y right;width:5px;height:100%;position:absolute;top:0;right:-5px;content:"";}
+.oneMenuArea .MenuLevel-2>.empty{ position:static; line-height:0; height:0; font-size:0; *margin-top:-2px; }
+.oneMenuArea .MenuLevel-2>.empty>.borderL,.oneMenuArea .MenuLevel-3>.empty>.borderL {background:url(images/MenuLevel-2_y_l.png) repeat-y 0 0;width:5px;height:100%;position:absolute;top:0;left:0;content:"";}
+.oneMenuArea .MenuLevel-2>.empty>.borderR,.oneMenuArea .MenuLevel-3>.empty>.borderR{background:url(images/MenuLevel-2_y_r.png) repeat-y right;width:5px;height:100%;position:absolute;top:0;right:0;content:"";}
+.oneMenuArea .MenuLevel-2>li>.arrow {width:14px;height:14px;background:url(images/MenuLevel-1_r.png) no-repeat 50% 0;position:absolute;top:11px;right:10px;content:"";}
+.oneMenuArea .MenuLevel-2>li:hover>.arrow,.oneMenuArea .MenuLevel-2>li.sl>.arrow {background-image:url(images/MenuLevel-2_r_sl.png);background-position:50% 1px;}
+
+.oneMenuArea .MenuLevel-3>.empty { position:static; line-height:0; height:0; font-size:0; }
+.oneMenuArea .MenuLevel-3>.empty>.borderL {background-color:#F0F0F0;left:-26px;width:26px;}
+.oneMenuArea .MenuLevel-3>.empty>.borderR {background-color:#F0F0F0;right:-30px;width:30px;background-position:right 0;}  
+/* 上下屏设置，主要用于WaitWorkFrames.aspx */
+.panel-tbm{ height:100%;}
+.panel-tbm iframe{ width:100%; height:100%; border-width:0;}
+.panel-tbm-set{ padding-top:65px; *padding-top:0;}
+.panel-tbm-set>.panel-top{ height:37px; margin-top:-67px; *margin-top:0; }
+.panel-tbm-set>.panel-bottom{ height:100%; *height:auto;}
+
+
+#btnSort { background:url(images/ywlbpx.png) no-repeat; width:95px; height:25px; border:0; color:#476383; margin-right:10px;}
+.FlowConfig_WorkTop_Title {display:none; }
+.FlowConfig_WorkTop_TabBar { height:37px; background-color:#d7f1ff;border-bottom:1px solid #cccccc;}
+.Tab { list-style:none; margin:0; padding:0;}
+.Tab li {width:92px; height:36px;  cursor:pointer; }
+
+.Tab a {text-decoration:none; font-size:12px; color:#3f577d; }
+.Tab > li > table {  text-align:center; }
+
+.Tab table .FlowConfig_WorkTop_Select_Center,.Tab table .FlowConfig_WorkTop_Center:hover{color:#ff4900; background-color:#fefeff; }
+.FlowConfig_WorkTop_Select_Right,.FlowConfig_WorkTop_Right {background:url(images/libg.png) no-repeat 0 4px; width:2px; }
+.FlowConfig_WorkTop_Select_Center,.FlowConfig_WorkTop_Center { width:92px; height:38px; line-height:38px; text-align:center;}
+.FlowConfig_WorkTop_Select_Center a, .FlowConfig_WorkTop_Select_Center,.FlowConfig_WorkTop_Center:hover a, .FlowConfig_WorkTop_Center:hover { display:block; background-color:#fdfdfd; color:#fd4900;  }
+
+/*主题管理页面*/
+.themeTable { border:1px solid #a4d0eb; vertical-align:top; padding:0; }
+.themeTable .Title, .ThemeConfigBar .Title { font-family:"SimSun"; }
+.themeTitle { border-bottom:1px solid #a4d0eb; background-color:#d6f0ff; height:35px; vertical-align:middle; padding-left:10px; font-size:1.2em; color:#3f577d; }
+.themeTitle .sysInfo { font-weight:normal; color:#3f577d; }
+#ThemeTree a:link, #ThemeTree a:visited { color:#000; }
+#ThemeTree { padding-left:10px; font-size:1.2em; margin-top:5px; }
+#ThemeTree img { display:none; }
+.SystemManagTree a[href="#ThemeTree_SkipLink"] {  }
+.SystemManagTree a[href="#ThemeTree_SkipLink"]>img { display:none;}
+.ThemeConfigBar { margin:0 15px; }
+.SystemManagTree { font-size:1em; }
+.SystemManagTree span { font-size:12px; }
+.SystemManagTree>#OrgTree_ctl00 { font-size:0;} 
+.SystemManagTree #OrgTree_ctl00t0 { color:#f00; }
+.SystemManagTree .divAllUser, .SystemManagTree .divUser { border:none; }
+.SystemManagTree .CenterBar>a { color:#3392d6; }
+.SystemManagTree .divLeftTitle, .SystemManagTree .divRightTitle { color:#3f577d; font-size:1.2em; }
+.SystemManagSearch>img[src="/tlwoawebv2/Portal/Themes/Resource/images/Search.gif"] { margin-right:2px; }
+
+/*左边菜单图标*/
+.oneMenuArea .MenuLevel-1 > li[title="个人事务"] span{background-position:-2px 0}
+.oneMenuArea .MenuLevel-1 > li[title="个人事务"]:hover span,.hover>.oneMenuArea .MenuLevel-1 > li.sl[title="个人事务"] span{background-position:-25px 0}
+.oneMenuArea .MenuLevel-1 > li[title="行政办公"] span {background-position:-50px 0}
+.oneMenuArea .MenuLevel-1 > li[title="行政办公"]:hover span,.hover>.oneMenuArea .MenuLevel-1 > li.sl[title="行政办公"] span {background-position:-73px 0}
+.oneMenuArea .MenuLevel-1 > li[title="考勤管理"] span {background-position:-98px 2px}
+.oneMenuArea .MenuLevel-1 > li[title="考勤管理"]:hover span,.hover>.oneMenuArea .MenuLevel-1 > li.sl[title="考勤管理"] span{background-position:-124px 2px}
+.oneMenuArea .MenuLevel-1 > li[title="公文管理"] span {background-position:-2px -25px}
+.oneMenuArea .MenuLevel-1 > li[title="公文管理"]:hover span,.hover>.oneMenuArea .MenuLevel-1 > li.sl[title="公文管理"] span {background-position:-25px -25px}
+.oneMenuArea .MenuLevel-1 > li[title="人力资源"] span {background-position:-50px -25px}
+.oneMenuArea .MenuLevel-1 > li[title="人力资源"]:hover span,.hover>.oneMenuArea .MenuLevel-1 > li.sl[title="人力资源"] span {background-position:-75px -25px}
+.oneMenuArea .MenuLevel-1 > li[title="财务事务"] span {background-position:-98px -25px}
+.oneMenuArea .MenuLevel-1 > li[title="财务事务"]:hover span,.hover>.oneMenuArea .MenuLevel-1 > li.sl[title="财务事务"] span {background-position:-124px -25px}
+.oneMenuArea .MenuLevel-1 > li[title="项目管理"] span{background-position:-2px -50px}
+.oneMenuArea .MenuLevel-1 > li[title="项目管理"]:hover span,.hover>.oneMenuArea .MenuLevel-1 > li.sl[title="项目管理"] span{background-position:-25px -50px}
+.oneMenuArea .MenuLevel-1 > li[title="CRM管理"] span {background-position:-50px -50px}
+.oneMenuArea .MenuLevel-1 > li[title="CRM管理"]:hover span,.hover>.oneMenuArea .MenuLevel-1 > li.sl[title="CRM管理"] span {background-position:-75px -50px}
+.oneMenuArea .MenuLevel-1 > li[title="交流园地"] span {background-position:-98px -50px}
+.oneMenuArea .MenuLevel-1 > li[title="交流园地"]:hover span,.hover>.oneMenuArea .MenuLevel-1 > li.sl[title="交流园地"] span{background-position:-124px -50px}
+.oneMenuArea .MenuLevel-1 > li[title="检查工具"] span{background-position:-2px -75px}
+.oneMenuArea .MenuLevel-1 > li[title="检查工具"]:hover span,.hover>.oneMenuArea .MenuLevel-1 > li.sl[title="检查工具"] span{background-position:-25px -75px}
+.oneMenuArea .MenuLevel-1 > li[title="系统管理"] span{background-position:-50px -75px}
+.oneMenuArea .MenuLevel-1 > li[title="系统管理"]:hover span,.hover>.oneMenuArea .MenuLevel-1 > li.sl[title="系统管理"] span {background-position:-75px -75px}
+.oneMenuArea .MenuLevel-1 > li[title="皮肤切换"] span{background-position:-98px -75px}
+.oneMenuArea .MenuLevel-1 > li[title="皮肤切换"]:hover span,.hover>.oneMenuArea .MenuLevel-1 > li.sl[title="皮肤切换"] span {background-position:-124px -75px}
+
+/*搜索*/
+.divSeach { background-color:#f0f0f0; border-bottom:1px solid #dbdbdb; padding:8px 10px 8px 15px; margin-bottom:10px; position:relative;overflow:hidden;line-height:22px;}
+.divSeach .btns { position:absolute; right:10px; top:9px; }
+.divSeach ul { margin:0; padding:0; list-style-type:none;overflow:hidden}
+.divSeach ul li {line-height:22px;height:24px;*height:auto;float:left;margin:2px 10px 2px 0;white-space:nowrap;}
+.divSeach ul li.rightBtn {float:right;}
+.divSeach select#Department { margin-right:15px; }
+.divSeach .QueryButton, .divSeach .PublicButton { margin-left:10px; }
+/*列表内删除及编辑图片*/
+.zx_edit,img[src="/tlwoawebv2/Portal/Themes/Resource/images/Edit.gif"], .zx_CodeImageXG, input[src="images/func_Edit.gif"], img[src="../Controls/SelectDept/images/EditIco.gif"], input[src="../Controls/SelectDept/images/EditIco.gif"]{ width:0; height:16px; padding-left:16px; vertical-align:middle; background:url(images/edit.png) center center no-repeat; border:none; }
+.zx_edit img {display:none}
+.zx_sc,input[src="/tlwoawebv2/Portal/Themes/Resource/images/Delete.gif"], .zx_CodeImage, input[src="images/func_Delete.gif"], input[src="../Controls/SelectDept/images/DEL.gif"] { width:0; height:16px; padding-left:16px; vertical-align:middle; background:url(images/chacha.png) center center no-repeat; }
+
+
+/*文件路径按钮修改样式*/
+.zx_FileInput { position:relative; display:inline-block;*display:inline;*zoom:1;margin-right:5px}
+.zx_file{ position:absolute; top:0; right:0px;  filter:alpha(opacity:0);opacity: 0;width:279px ;*width:284px; height:26px;cursor:pointer; line-height:20px; vertical-align:middle}
+.zx_Fileinput { width:200px}
+
+/*主题切换*/
+.themesCont .img .bg {background:transparent url(images/themes/themes_hover.png) no-repeat 0 0;filter:none;}
+:root .themesCont .img .bg {background-color:rgba(0, 0, 0, 0); }
+.themesBtn > div {background:url(images/themes/btn-c.png) repeat-x 0 0;border:none;height:29px;line-height:29px;}
+.themesBtn > div > div.l {left:-10px;background:url(images/themes/btn-l.png) no-repeat 0 0;}
+.themesBtn > div > div.r {right:-10px;background:url(images/themes/btn-r.png) no-repeat 0 0;}

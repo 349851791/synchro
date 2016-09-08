@@ -78,6 +78,22 @@
     <Content Include="02_素材\banner&amp;floot\bolianbg.png" />
     <Content Include="02_素材\banner&amp;floot\m_1374881316095.jpg" />
     <Content Include="02_素材\banner&amp;floot\素材中国 sccnn.com.jpg" />
+    <Content Include="02_素材\公司OA\头部\head_bg.jpg" />
+    <Content Include="02_素材\公司OA\头部\top_bg.png" />
+    <Content Include="02_素材\公司OA\头部\user_bg.png" />
+    <Content Include="02_素材\公司OA\头部\user_icon.png" />
+    <Content Include="02_素材\公司OA\头部\全图.png" />
+    <Content Include="02_素材\公司OA\登录\blueBL.png" />
+    <Content Include="02_素材\公司OA\登录\blueBR.png" />
+    <Content Include="02_素材\公司OA\登录\blueBT.png" />
+    <Content Include="02_素材\公司OA\登录\idIcon.png" />
+    <Content Include="02_素材\公司OA\登录\loginback.jpg" />
+    <Content Include="02_素材\公司OA\登录\loginBtnC.png" />
+    <Content Include="02_素材\公司OA\登录\loginDivide.png" />
+    <Content Include="02_素材\公司OA\登录\loginEarth.png" />
+    <Content Include="02_素材\公司OA\登录\Public.css" />
+    <Content Include="02_素材\公司OA\登录\pwdIcon.png" />
+    <Content Include="02_素材\公司OA\登录\Web.css" />
     <Content Include="02_素材\博联素材\200779183352337.jpg" />
     <Content Include="02_素材\博联素材\505c8ad40ac76.jpg" />
     <Content Include="02_素材\博联素材\91b1OOOPICc7.jpg" />
@@ -87,6 +103,7 @@
     <Content Include="02_素材\登录按钮效果\login.html" />
     <Content Include="02_素材\登录按钮效果\rotate.png" />
     <Content Include="02_素材\登录按钮效果\关键脚本.txt" />
+    <Content Include="02_素材\简单白色界面按钮PSD素材\简单白色界面按钮PSD素材_lanrentuku.com.jpg" />
     <Content Include="02_素材\背景\all_bg2.jpg" />
     <Content Include="02_素材\背景\bg.jpg" />
     <Content Include="02_素材\背景\bg1.jpg" />
@@ -104,6 +121,12 @@
     <None Include="02_素材\博联素材\20110824033520115.rar" />
     <None Include="02_素材\博联素材\dasu-psd.zip" />
     <None Include="02_素材\博联素材\一流素材网www.16sucai.com.psd" />
+    <None Include="02_素材\简单白色界面按钮PSD素材\简单白色界面按钮PSD素材_lanrentuku.com.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="02_素材\刷新按钮\" />
+    <Folder Include="02_素材\简单后台管理系统模板\" />
+    <Folder Include="02_素材\辽宁省国土资源厅界面\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

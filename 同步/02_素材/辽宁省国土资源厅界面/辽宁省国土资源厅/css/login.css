@@ -1,0 +1,9 @@
+﻿html,body{padding:0;margin:0;height:100%;overflow:hidden}
+body {font-size:0}
+.login_div { position:absolute;top:50%;left:50%; margin-left:-86px;margin-top:-70px;width:362px;height:247px;background:url(image/login.png)}
+.login_name { margin-top:67px;margin-left:119px; }
+.login_pass {margin-top:29px;margin-left:120px;*margin-top:27px}
+.login_pass, .login_name {width:200px;height:24px;line-height:24px; border:0;background:none ;*margin-left:207px}
+.login_denglu, .login_tuichu {width:60px;height:29px; background:none;border:0;cursor:pointer}
+.login_denglu { margin-left:201px;margin-top:23px;margin-right:4px;*margin-left:287px}
+.login_logo {background:url(image/logo.png) no-repeat; width:523px;height:140px; position:absolute; top:-179px;left:-5px}
