@@ -126,7 +126,10 @@
   <ItemGroup>
     <Folder Include="02_素材\刷新按钮\" />
     <Folder Include="02_素材\简单后台管理系统模板\" />
+    <Folder Include="02_素材\网页后台\" />
     <Folder Include="02_素材\辽宁省国土资源厅界面\" />
+    <Folder Include="02_素材\透明信息提示框PSD素材\" />
+    <Folder Include="02_素材\透明效果界面\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
