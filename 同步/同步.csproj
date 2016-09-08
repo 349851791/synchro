@@ -55,6 +55,8 @@
     <Content Include="01_oracle命令\oracle_版本.txt" />
     <Content Include="01_oracle命令\oracle_用户密码过期.txt" />
     <Content Include="01_oracle命令\查询数据时,直接显示序号.txt" />
+    <Content Include="02_素材\13v58PICuRj_1024.jpg" />
+    <Content Include="02_素材\17758PICeta_1024.jpg" />
     <Content Include="02_素材\3D滚动盒子样式翻滚图片\1.jpg" />
     <Content Include="02_素材\3D滚动盒子样式翻滚图片\2.jpg" />
     <Content Include="02_素材\3D滚动盒子样式翻滚图片\3.jpg" />
@@ -67,6 +69,9 @@
     <Content Include="02_素材\3D滚动盒子样式翻滚图片\js\index.js" />
     <Content Include="02_素材\3D滚动盒子样式翻滚图片\js\jquery.js" />
     <Content Include="02_素材\3D滚动盒子样式翻滚图片\js\modernizr.js" />
+    <Content Include="02_素材\52P58PICJMb_1024.jpg" />
+    <Content Include="02_素材\abc.png" />
+    <Content Include="02_素材\all_bg.jpg" />
     <Content Include="02_素材\banner&amp;floot\200779183352337.jpg" />
     <Content Include="02_素材\banner&amp;floot\334.jpg" />
     <Content Include="02_素材\banner&amp;floot\505c8ad40ac76.jpg" />
@@ -78,6 +83,10 @@
     <Content Include="02_素材\banner&amp;floot\bolianbg.png" />
     <Content Include="02_素材\banner&amp;floot\m_1374881316095.jpg" />
     <Content Include="02_素材\banner&amp;floot\素材中国 sccnn.com.jpg" />
+    <Content Include="02_素材\jingxuan001.jpg" />
+    <Content Include="02_素材\QQ截图20160302170152.png" />
+    <Content Include="02_素材\一闪闪.html" />
+    <Content Include="02_素材\交通.jpg" />
     <Content Include="02_素材\公司OA\头部\head_bg.jpg" />
     <Content Include="02_素材\公司OA\头部\top_bg.png" />
     <Content Include="02_素材\公司OA\头部\user_bg.png" />
@@ -99,11 +108,19 @@
     <Content Include="02_素材\博联素材\91b1OOOPICc7.jpg" />
     <Content Include="02_素材\博联素材\bgBian.png" />
     <Content Include="02_素材\博联素材\渐变透明.txt" />
+    <Content Include="02_素材\国土资源云平台- 登陆页 拷贝.jpg" />
+    <Content Include="02_素材\国土资源云平台-内页工具.jpg" />
+    <Content Include="02_素材\国土资源云平台3 拷贝.jpg" />
+    <Content Include="02_素材\图片上一闪而过的光.html" />
+    <Content Include="02_素材\图片上有一闪而过的光.html" />
+    <Content Include="02_素材\旅游.jpg" />
+    <Content Include="02_素材\渐变透明.txt" />
     <Content Include="02_素材\登录按钮效果\btn.png" />
     <Content Include="02_素材\登录按钮效果\login.html" />
     <Content Include="02_素材\登录按钮效果\rotate.png" />
     <Content Include="02_素材\登录按钮效果\关键脚本.txt" />
     <Content Include="02_素材\简单白色界面按钮PSD素材\简单白色界面按钮PSD素材_lanrentuku.com.jpg" />
+    <Content Include="02_素材\系统界面.png" />
     <Content Include="02_素材\背景\all_bg2.jpg" />
     <Content Include="02_素材\背景\bg.jpg" />
     <Content Include="02_素材\背景\bg1.jpg" />
@@ -114,13 +131,19 @@
     <Content Include="02_素材\背景\taiz_bg.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="02_素材\549b78e803b06.zip" />
+    <None Include="02_素材\56a8dfac2e296.zip" />
+    <None Include="02_素材\56a8e05096c3d.zip" />
     <None Include="02_素材\banner&amp;floot\20110824033520115.rar" />
     <None Include="02_素材\banner&amp;floot\5285c0f6331db.psd" />
     <None Include="02_素材\banner&amp;floot\dasu-psd.zip" />
     <None Include="02_素材\banner&amp;floot\一流素材网www.16sucai.com.psd" />
+    <None Include="02_素材\jquery高仿新浪微博图片显示插件.rar" />
+    <None Include="02_素材\Login_BackGround_BG2-.psd" />
     <None Include="02_素材\博联素材\20110824033520115.rar" />
     <None Include="02_素材\博联素材\dasu-psd.zip" />
     <None Include="02_素材\博联素材\一流素材网www.16sucai.com.psd" />
+    <None Include="02_素材\登录页整体.psd" />
     <None Include="02_素材\简单白色界面按钮PSD素材\简单白色界面按钮PSD素材_lanrentuku.com.psd" />
   </ItemGroup>
   <ItemGroup>

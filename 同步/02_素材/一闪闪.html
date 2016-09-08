@@ -1,0 +1,23 @@
+<HTML> 
+<HEAD> 
+<META http-equiv="Content-Type" content="text/html; charset=gb2312"> 
+<TITLE>无标题文档-学无忧（www.xue51.com）</title> 
+</HEAD> 
+<BODY> 
+<IMG id="imgId" style="visibility:visible " src="abc.png"> 
+<SCRIPT language="javascript"> 
+function showImg() 
+{ 
+    if(imgId.style.visibility == "visible")    
+//如果可见，则隐藏
+        imgId.style.visibility = "hidden"; 
+    else 
+        imgId.style.visibility = "visible";    
+//设置图像可见
+    setTimeout('showImg()',300);               
+//间隔的毫秒
+} 
+showImg(); 
+</SCRIPT> 
+</BODY> 
+</HTML>
