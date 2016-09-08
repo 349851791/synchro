@@ -1,0 +1,1 @@
+cmd об ткпп:sdemon -o kill -t all -p sde

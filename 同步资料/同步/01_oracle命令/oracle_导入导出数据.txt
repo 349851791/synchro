@@ -1,0 +1,43 @@
+oracle数据库的导入导出命令：
+
+Oracle数据导入导出imp/exp就相当于oracle数据还原与备份。exp命令可以把数据从远程数据库服务器导出到本地的dmp文件， imp命令可以把dmp文件从本地导入到远处的数据库服务器中。 利用这个功能可以构建两个相同的数据库，一个用来测试，一个用来正式使用
+
+导出数据库文件（开始--运行--cmd）
+1、用户名为stu_test，密码为abcdef，数据库为orcl，file=.....为导出后存放位置
+
+exp stu_test/abcdef@orcl file=d:/a.dmp  log=d:/a.log
+
+
+2、将数据库中system用户与sys用户的表导出
+
+exp system/system@orcl file=d:/a.dmp owner=(system,sys)  
+
+
+
+3、将数据库中的表t1、t2导出
+
+exp zyna/zyna@orcl file=d:/a.dmp tables=(t1,t2)  
+
+4、将数据库中的表table1中的字段filed1以"00"打头的数据导出
+
+exp system/system@orcl file=d:/a.dmp tables=(table1) query=" where filed1 like '00%'"  
+
+
+
+
+导入数据库文件(开始--运行--cmd )
+1、用户名是stu_test，密码是abcdef，数据库是orclfile=....是要导入的数据库文件的存放位置
+
+imp stu_test/abcdef@orcl file=d:/a.dmp full=y  ignore=y
+
+
+ 
+
+    imp stu_test/abcdef@orcl file=d:/a.dmp full=y ignore=y   
+    --上面可能有点问题，因为有的表已经存在，然后它就报错，对该表就不进行导入。   
+    --在后面加上 ignore=y 就可以了。  
+
+
+2、将d:/a.dmp中的表table1 导入
+
+    imp DLTDGY/DLTDGY@ORCL101 file=C:/DLTDGY.dmp tables=(FLOWS)  

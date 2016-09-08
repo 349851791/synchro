@@ -1,0 +1,2 @@
+1.select rownum ,a.* from( select empid,empname from emptab order by empid) a
+2.select row_number() over (order by empid) , empid,empname from emptab order by empid 

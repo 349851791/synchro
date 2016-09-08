@@ -1,0 +1,61 @@
+--删除用户:
+drop user abcdefg cascade;
+
+--删除表空间格式：
+DROP TABLESPACE abcdefg 
+[INCLUDING CONTENTS [AND DATAFILES] [CASCADE CONSTRAINTS]]
+其中：
+tablespace：指定要删除的表空间的名称
+INCLUDING CONTENTS：删除表空间内的所有段
+AND DATAFILES：删除关联的操作系统文件
+CASCADE CONSTRAINTS：如果要删除的表空间之外的表引用了该表空间内表的主
+键和唯一键，则删除这种引用完整性约束。
+
+
+
+
+
+
+ORA-00604: 递归 SQL 级别 1 出现错误
+ORA-02429: 无法删除用于强制唯一/主键的索引
+
+
+今天打算删除orcale数据库中无用的表空间，发现报错，查资料删除，写个过程留着备用。
+
+1、drop tablespace dldata INCLUDING CONTENTS CASCADE CONSTRAINTS;
+
+报错如下：
+ORA-00604: 递归 SQL 级别 1 出现错误
+ORA-02429: 无法删除用于强制唯一/主键的索引
+
+2、select segment_name,partition_name,tablespace_name from dba_extents where tablespace_name=upper('DLDATA');
+
+显示有两个表：
+SEGMENT_NAME                   PARTITION_NAME                 TABLESPACE_NAME
+-------------------- ------------------------- ------------------------------
+AAAA                                                          DLDATA
+AAAA                                                          DLDATA
+
+以下是生成删除主键约束的脚本
+3、select 'alter table '||owner||'.'||table_name||' drop constraint '||constraint_name||' ;' from dba_constraints where constraint_type in ('U', 'P') and (index_owner, index_name) in (select owner, segment_name from dba_segments where tablespace_name = 'DLDATA');
+
+显示如下：
+'ALTERTABLE'||OWNER||'.'||TABL
+--------------------------------------------------------------------------------
+alter table KJMN.EQINTERFACE drop constraint AAAA ;
+alter table USERACC.EQINTERFACE drop constraint AAAA ;
+
+4、alter table KJMN.EQINTERFACE drop constraint AAAA ;
+
+结果如下：
+Table altered
+
+5、alter table USERACC.EQINTERFACE drop constraint AAAA ;
+
+结果如下：
+Table altered
+
+6、drop tablespace DLDATA INCLUDING CONTENTS;
+
+结果如下：
+Tablespace dropped

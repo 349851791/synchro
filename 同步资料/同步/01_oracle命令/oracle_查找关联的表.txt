@@ -1,0 +1,3 @@
+select * from user_cons_columns cl where cl.constraint_name ='FK_ACCOUNT_ASSOCIATI_ACCOUNTP';
+
+FK_ACCOUNT_ASSOCIATI_ACCOUNTP=Íâ¼üÃû³Æ

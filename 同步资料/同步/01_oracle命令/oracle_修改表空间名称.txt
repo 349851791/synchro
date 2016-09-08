@@ -1,0 +1,11 @@
+--移动表的表空间
+select 'alter table '|| table_name||' move tablespace MHKZFJC' from user_tables
+
+--移动索引的表空间
+select 'alter index  '|| index_name||' rebuild  tablespace MHKZFJC' from user_indexes where tablespace_name ='LHZFJC'
+
+--移动lob字段
+select 'ALTER TABLE '|| table_name ||' move lob ('|| column_name||') store as (tablespace MHKZFJC)' from dba_lobs where tablespace_name='OADB' and owner='MHKZFJC'
+
+--修改不可用的索：执行[移动lob字段]可能会导致索引不可用，则执行下面的语句，导致索引不可用也可能是先执行了2，再执行3，可能反过来执行就可以，没试过
+select 'alter index '||index_name||' rebuild' from dba_indexes where status='UNUSABLE'
