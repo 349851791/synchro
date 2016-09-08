@@ -119,6 +119,27 @@
     <Content Include="02_素材\登录按钮效果\login.html" />
     <Content Include="02_素材\登录按钮效果\rotate.png" />
     <Content Include="02_素材\登录按钮效果\关键脚本.txt" />
+    <Content Include="02_素材\简单后台管理系统模板\css\style.css" />
+    <Content Include="02_素材\简单后台管理系统模板\images\app.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\bg1.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\channel.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\cloud.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\custom.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\erweima.jpg" />
+    <Content Include="02_素材\简单后台管理系统模板\images\home.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\ioc-02.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\ioc-03.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\ioc-04.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\ioc.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\select_xl.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\select_xl01.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\source.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\statistics.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\syetem_management.png" />
+    <Content Include="02_素材\简单后台管理系统模板\images\system.png" />
+    <Content Include="02_素材\简单后台管理系统模板\index.html" />
+    <Content Include="02_素材\简单后台管理系统模板\js\jquery-1.8.3.min.js" />
+    <Content Include="02_素材\简单后台管理系统模板\js\menu.js" />
     <Content Include="02_素材\简单白色界面按钮PSD素材\简单白色界面按钮PSD素材_lanrentuku.com.jpg" />
     <Content Include="02_素材\系统界面.png" />
     <Content Include="02_素材\背景\all_bg2.jpg" />
@@ -148,7 +169,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="02_素材\刷新按钮\" />
-    <Folder Include="02_素材\简单后台管理系统模板\" />
     <Folder Include="02_素材\网页后台\" />
     <Folder Include="02_素材\辽宁省国土资源厅界面\" />
     <Folder Include="02_素材\透明信息提示框PSD素材\" />
