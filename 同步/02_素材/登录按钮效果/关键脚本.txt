@@ -1,0 +1,131 @@
+(function ($) {
+    var login = {
+        createSwf: function (src) {
+            return $('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%"><param name="movie" value="' + src + '" /><param name="quality" value="high" /><param name="WMode" value="Transparent"><embed wmode="transparent" src="' + src + '" quality="high" type="application/x-shockwave-flash" width="100%" height="100%" /></object>');
+        },
+        placeholder: function (e) {
+            e.each(function (i, n) {
+                this.value !== '' && $(this).parent().prev().hide();
+            })
+            e.bind({
+                focus: function () {
+                    this.value === '' && $(this).parent().prev().hide();
+                    //console.log(1)
+                },
+                focusout: function () {
+                    this.value === '' && $(this).parent().prev().show();
+                }
+            });
+        },
+        addBgImage: function () {
+            $('body').addClass('login-bg' + Math.ceil(Math.random() * 4));
+        },
+        getTheme: function () {
+            var theme = $('head').html().match(/theme.axd\?theme=(\S+)"/);
+            return this.theme = theme && theme.length == 2 ? theme[1] : false;
+        },
+        rotation: function () {
+            var theme = this.theme, img;
+            if (theme) {
+                img = new Image();
+                img.src = '/App_Themes/' + theme + '/images/login/rotate.png';
+                img.onload = function () {
+                    var angle = 0, div;
+                    img = $(img);
+                    div = $('.login-animate');
+                    img.prependTo(div);
+                    window.setInterval(function () {
+                        angle += 6;
+                        angle = angle > 360 ? 6 : angle;
+                        div.children(':first').rotate(angle);
+                    }, 100);
+                };
+            }
+        },
+        slideImg: function () {
+            var album = ["/App_Themes/" + this.theme + "/images/login/", "login_img01.jpg", "login_img02.jpg", "login_img03.jpg", "login_img04.jpg", "login_img05.jpg", "login_img06.jpg", "login_img07.jpg"], albumUl = $("<ul>"), folder = album.shift(), i = 0, j = album.length, img, current, currentLength;
+            for (; i < j; i++) {
+                img = new Image();
+                img.src = folder + "/" + album[i]/*album[current]*/;
+                img.alt = "";
+                img.className = "cubeRandom";
+                $("<li>").append(img).appendTo(albumUl);
+            }
+            $("#slideshow").append(albumUl);
+            slidesshowInit();
+        },
+        checkBox: function () {
+            $(".down-div").click(function (e) {
+                var targer = e.target, label;
+                if (targer.tagName === "INPUT" && targer.type === "checkbox") {
+                    targer.blur();
+                    label = $(targer).next();
+                    label.hasClass("checked") ? label.removeClass("checked") : label.addClass("checked");
+                }
+            });
+        },
+        createUserSelect: function (db) {
+            var ul = $('<ul></ul>'), i = 0, li, op;
+            ul.addClass('login-user-list')
+            while (op = db[i++]) {
+                li = $('<li></li>').text(op)
+                    .appendTo(ul);
+            }
+            li.addClass('login-user-last');
+            return ul;
+        },
+        userSelectBind: function (ul) {
+            var that = this, name = 'login-user-select';
+            ul.click(function (e) {
+                e = e.target;
+                if (e.tagName === 'LI') {
+                    e = $(e);
+                    e.addClass(name);
+                    that.select && that.select.removeClass(name);
+                    that.select = e;
+                }
+            });
+            $('.IDInput>input').bind({
+                focut: function () {
+                    ul.show();
+                },
+                focusout: function () {
+                    ul.hide();
+                }
+            });
+        },
+        tab: function () {
+            var tabs = $('.login-tab>div'), tabCs = $('.login-main>table');
+            tabs.click(function (e) {
+                var that = $(this), name = 'login-t-select', old, index;
+                if (that.hasClass(name) || that.hasClass('login-t-disabled')) return;
+                that.addClass(name);
+                index = that.index();
+                old = -index + 1;
+                tabs.eq(old).removeClass(name);
+                tabCs.eq(index).addClass(name);
+                tabCs.eq(old).removeClass(name);
+            });
+        },
+        init: function () {
+            var user = $('.IDInput>input'), pw = $('.PasswordInput>input'), inputs = $(user), i = 0, p;
+            for (; p = pw[i++]; ) {
+                inputs.push(p);
+            }
+            this.createSwf('Data/title.swf').appendTo($('h1.login-title'));
+            this.addBgImage();
+            this.getTheme();
+            this.rotation();
+            this.placeholder(inputs);
+            $('table.login-t-select .IDInput>input').focus();
+            this.slideImg();
+            this.checkBox();
+            //this.userSelectBind(this.createUserSelect(['张三  879650', '李四  477633', '王五  476796']).appendTo($('.login-ID')));
+            this.tab();
+        }
+    };
+
+    $(function () {
+        login.init();
+    });
+})(jQuery);

@@ -78,12 +78,32 @@
     <Content Include="02_素材\banner&amp;floot\bolianbg.png" />
     <Content Include="02_素材\banner&amp;floot\m_1374881316095.jpg" />
     <Content Include="02_素材\banner&amp;floot\素材中国 sccnn.com.jpg" />
+    <Content Include="02_素材\博联素材\200779183352337.jpg" />
+    <Content Include="02_素材\博联素材\505c8ad40ac76.jpg" />
+    <Content Include="02_素材\博联素材\91b1OOOPICc7.jpg" />
+    <Content Include="02_素材\博联素材\bgBian.png" />
+    <Content Include="02_素材\博联素材\渐变透明.txt" />
+    <Content Include="02_素材\登录按钮效果\btn.png" />
+    <Content Include="02_素材\登录按钮效果\login.html" />
+    <Content Include="02_素材\登录按钮效果\rotate.png" />
+    <Content Include="02_素材\登录按钮效果\关键脚本.txt" />
+    <Content Include="02_素材\背景\all_bg2.jpg" />
+    <Content Include="02_素材\背景\bg.jpg" />
+    <Content Include="02_素材\背景\bg1.jpg" />
+    <Content Include="02_素材\背景\bg2.jpg" />
+    <Content Include="02_素材\背景\bg3.jpg" />
+    <Content Include="02_素材\背景\bg4.jpg" />
+    <Content Include="02_素材\背景\index_bg.jpg" />
+    <Content Include="02_素材\背景\taiz_bg.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="02_素材\banner&amp;floot\20110824033520115.rar" />
     <None Include="02_素材\banner&amp;floot\5285c0f6331db.psd" />
     <None Include="02_素材\banner&amp;floot\dasu-psd.zip" />
     <None Include="02_素材\banner&amp;floot\一流素材网www.16sucai.com.psd" />
+    <None Include="02_素材\博联素材\20110824033520115.rar" />
+    <None Include="02_素材\博联素材\dasu-psd.zip" />
+    <None Include="02_素材\博联素材\一流素材网www.16sucai.com.psd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
