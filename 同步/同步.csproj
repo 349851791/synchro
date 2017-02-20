@@ -169,6 +169,8 @@
     <None Include="02_素材\简单白色界面按钮PSD素材\简单白色界面按钮PSD素材_lanrentuku.com.psd" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="02_素材\5000个extjs小图标\" />
+    <Folder Include="02_素材\html5+css3动态效果\" />
     <Folder Include="02_素材\刷新按钮\" />
     <Folder Include="02_素材\网页后台\" />
     <Folder Include="02_素材\辽宁省国土资源厅界面\" />
