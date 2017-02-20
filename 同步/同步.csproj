@@ -48,6 +48,7 @@
     <Content Include="01_oracle命令\oracle_修改表空间名称.txt" />
     <Content Include="01_oracle命令\oracle_创建表空间和用户脚本.txt" />
     <Content Include="01_oracle命令\oracle_删除用户和表空间.txt" />
+    <Content Include="01_oracle命令\oracle_取得分组后最大值记录 .txt" />
     <Content Include="01_oracle命令\oracle_导入导出数据.txt" />
     <Content Include="01_oracle命令\oracle_杀死arc进程.txt" />
     <Content Include="01_oracle命令\oracle_查找关联的表.txt" />

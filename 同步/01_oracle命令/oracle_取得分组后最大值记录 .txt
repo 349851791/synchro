@@ -1,0 +1,5 @@
+
+select  from
+(select t., row_number() over(partition by ·Ö×é×Ö¶Î order by ÅÅÐò×Ö¶Î desc ) rn
+from tablename t )
+where rn=1
