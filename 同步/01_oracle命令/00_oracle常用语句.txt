@@ -1,0 +1,61 @@
+﻿--1.导出数据库
+exp dhzfjc/dhzfjc@10.1.52.101/tlh file=d:/a.dmp  log=d:/a.log
+
+--2.删除先表空间以及用户
+
+ select username,sid,serial# from v$session;  
+ alter system kill session '134,4519';
+
+--删除用户:
+drop user DHZFJC cascade;
+
+--删除表空间格式：
+DROP TABLESPACE DHZFJC 
+INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS
+
+--3.创建表空间及用户
+--创建表空间
+CREATE TABLESPACE DHZFJC
+    LOGGING 
+    DATAFILE 'D:\app\Administrator\oradata\tlh\DHZFJC.ora' SIZE 50M REUSE 
+    AUTOEXTEND 
+    ON NEXT  10M MAXSIZE UNLIMITED EXTENT MANAGEMENT LOCAL;
+
+
+---用户
+CREATE USER DHZFJC  PROFILE "DEFAULT" IDENTIFIED BY 
+    DHZFJC DEFAULT 
+    TABLESPACE DHZFJC TEMPORARY 
+    TABLESPACE "TEMP" ACCOUNT UNLOCK;
+
+GRANT UNLIMITED TABLESPACE TO DHZFJC;
+GRANT "CONNECT"    TO DHZFJC;
+GRANT "RESOURCE"   TO DHZFJC;
+GRANT CREATE VIEW  TO DHZFJC;
+GRANT "DBA" TO DHZFJC WITH ADMIN OPTION;
+
+GRANT SELECT ON "SYS"."V_$SESSION" TO DHZFJC;
+GRANT SELECT ON "SYS"."V_$SESSTAT" TO DHZFJC;
+GRANT SELECT ON "SYS"."V_$STATNAME" TO DHZFJC;
+
+--4.导入数据
+imp dhzfjc/dhzfjc@10.1.52.101/tlh file=d:/a.dmp full=y  ignore=y
+
+--5.修改表空间名称等
+--移动表的表空间
+select 'alter table '|| table_name||' move tablespace MHKZFJC' from user_tables where tablespace_name='LNNEWOA';
+
+--移动索引的表空间
+select 'alter index  '|| index_name||' rebuild  tablespace MHKZFJC' from user_indexes where tablespace_name ='LHZFJC'
+
+--移动lob字段
+select 'ALTER TABLE '|| table_name ||' move lob ('|| column_name||') store as (tablespace MHKZFJC)' from dba_lobs where tablespace_name='OADB' and owner='MHKZFJC'
+
+--修改不可用的索：执行[移动lob字段]可能会导致索引不可用，则执行下面的语句，导致索引不可用也可能是先执行了2，再执行3，可能反过来执行就可以，没试过
+select 'alter index '||index_name||' rebuild' from dba_indexes where status='UNUSABLE'
+
+--允许导出空表
+alter system set deferred_segment_creation=false;
+
+--表连接更新
+update tdzs_xxgk a set a.pzsj=(select b.pzsj from  tdzs_xxgk_14 b where a.id=b.id) where a.id in (select id from tdzs_xxgk_14) 
