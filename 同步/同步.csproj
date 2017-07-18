@@ -2853,6 +2853,9 @@
     <Content Include="02_素材\banner&amp;floot\素材中国 sccnn.com.jpg" />
     <Content Include="02_素材\jingxuan001.jpg" />
     <Content Include="02_素材\QQ截图20160302170152.png" />
+    <Content Include="02_素材\waiting1.gif" />
+    <Content Include="02_素材\waiting2.gif" />
+    <Content Include="02_素材\waiting3.gif" />
     <Content Include="02_素材\一闪闪.html" />
     <Content Include="02_素材\交通.jpg" />
     <Content Include="02_素材\公司OA\头部\head_bg.jpg" />
@@ -3179,9 +3182,11 @@
     <None Include="02_素材\banner&amp;floot\5285c0f6331db.psd" />
     <None Include="02_素材\banner&amp;floot\dasu-psd.zip" />
     <None Include="02_素材\banner&amp;floot\一流素材网www.16sucai.com.psd" />
+    <None Include="02_素材\html5+css3动态效果\9款按钮.rar" />
     <None Include="02_素材\html5+css3动态效果\checkbox.rar" />
     <None Include="02_素材\html5+css3动态效果\grid-effect.rar" />
     <None Include="02_素材\html5+css3动态效果\html5-loading.rar" />
+    <None Include="02_素材\html5+css3动态效果\html5页面滚动等待条.rar" />
     <None Include="02_素材\html5+css3动态效果\page-transitions.rar" />
     <None Include="02_素材\html5+css3动态效果\parallax-slider.rar" />
     <None Include="02_素材\html5+css3动态效果\samsung-grid.rar" />
@@ -3193,6 +3198,7 @@
     <None Include="02_素材\html5+css3动态效果\single-loaders.rar" />
     <None Include="02_素材\html5+css3动态效果\slice-box.rar" />
     <None Include="02_素材\html5+css3动态效果\图片切换camera.rar" />
+    <None Include="02_素材\html5+css3动态效果\滚动条.rar" />
     <None Include="02_素材\jquery高仿新浪微博图片显示插件.rar" />
     <None Include="02_素材\Login_BackGround_BG2-.psd" />
     <None Include="02_素材\博联素材\20110824033520115.rar" />
