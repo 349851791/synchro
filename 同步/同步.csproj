@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="01_oracle命令\00_oracle常用语句.txt" />
-    <Content Include="01_oracle命令\oracle_00_常用语句.txt" />
     <Content Include="01_oracle命令\oracle_使用sql获取数据库表，表的字段 .txt" />
     <Content Include="01_oracle命令\oracle_修改表空间名称.txt" />
     <Content Include="01_oracle命令\oracle_创建表空间和用户脚本.txt" />
@@ -3134,6 +3133,7 @@
     <Content Include="02_素材\透明效果界面\h.jpg" />
     <Content Include="02_素材\透明效果界面\i.jpg" />
     <Content Include="02_素材\透明效果界面\j.jpg" />
+    <Content Include="02_素材\颜色过度细横线.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="02_素材\5000个extjs小图标\ExtJS icons\application\Thumbs.db" />

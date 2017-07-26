@@ -59,3 +59,6 @@ alter system set deferred_segment_creation=false;
 
 --表连接更新
 update tdzs_xxgk a set a.pzsj=(select b.pzsj from  tdzs_xxgk_14 b where a.id=b.id) where a.id in (select id from tdzs_xxgk_14) 
+
+--查找表关联 FK_ACCOUNT_ASSOCIATI_ACCOUNTP=外键名称
+select * from user_cons_columns cl where cl.constraint_name ='FK_ACCOUNT_ASSOCIATI_ACCOUNTP';
