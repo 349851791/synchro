@@ -40,6 +40,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\Program.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\Properties\AssemblyInfo.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.Interface\IDBHelper.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.Interface\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.Interface\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.Interface\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.Interface\Properties\AssemblyInfo.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.Oracle\DBHelper.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.Oracle\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.Oracle\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.Oracle\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.Oracle\Properties\AssemblyInfo.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\DBHelper.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\Properties\AssemblyInfo.cs" />
+    <Compile Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\ReflectionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -3134,6 +3155,43 @@
     <Content Include="02_素材\透明效果界面\i.jpg" />
     <Content Include="02_素材\透明效果界面\j.jpg" />
     <Content Include="02_素材\颜色过度细横线.png" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\bin\Debug\ConsoleApplication.exe" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\bin\Debug\ConsoleApplication.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\bin\Debug\ConsoleApplication.vshost.exe" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\bin\Debug\DB.Interface.dll" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\bin\Debug\DB.Interface.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\bin\Debug\DB.Oracle.dll" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\bin\Debug\DB.Oracle.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\bin\Debug\DB.SQLserver.dll" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\bin\Debug\DB.SQLserver.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\obj\Debug\ConsoleApplication.csproj.FileListAbsolute.txt" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\obj\Debug\ConsoleApplication.exe" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\obj\Debug\ConsoleApplication.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\obj\Debug\Reflection.csproj.FileListAbsolute.txt" />
+    <Content Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\Reflection.csproj" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Interface\bin\Debug\DB.Interface.dll" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Interface\bin\Debug\DB.Interface.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Interface\DB.Interface.csproj" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Interface\obj\Debug\DB.Interface.csproj.FileListAbsolute.txt" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Interface\obj\Debug\DB.Interface.dll" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Interface\obj\Debug\DB.Interface.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Oracle\bin\Debug\DB.Interface.dll" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Oracle\bin\Debug\DB.Interface.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Oracle\bin\Debug\DB.Oracle.dll" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Oracle\bin\Debug\DB.Oracle.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Oracle\DB.Oracle.csproj" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Oracle\obj\Debug\DB.Oracle.csproj.FileListAbsolute.txt" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Oracle\obj\Debug\DB.Oracle.dll" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.Oracle\obj\Debug\DB.Oracle.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\bin\Debug\DB.Interface.dll" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\bin\Debug\DB.Interface.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\bin\Debug\DB.SQLserver.dll" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\bin\Debug\DB.SQLserver.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\DB.SQLserver.csproj" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\obj\Debug\DB.SQLserver.csproj.FileListAbsolute.txt" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\obj\Debug\DB.SQLserver.dll" />
+    <Content Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\obj\Debug\DB.SQLserver.pdb" />
+    <Content Include="03_Demo\反射demo\WindowsForms\WindowsForms.sln" />
   </ItemGroup>
   <ItemGroup>
     <None Include="02_素材\5000个extjs小图标\ExtJS icons\application\Thumbs.db" />
@@ -3212,8 +3270,29 @@
     <None Include="02_素材\网页后台\白色 简单\psd\transdmin light.psd" />
     <None Include="02_素材\辽宁省国土资源厅界面\界面\登录页整体.psd" />
     <None Include="02_素材\透明信息提示框PSD素材\半透明信息提示框PSD素材_lanrentuku.com.psd" />
+    <None Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\App.config" />
+    <None Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config" />
+    <None Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\bin\Debug\ConsoleApplication.vshost.exe.config" />
+    <None Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\bin\Debug\ConsoleApplication.vshost.exe.manifest" />
+    <None Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache" />
+    <None Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\obj\Debug\Reflection.csprojResolveAssemblyReference.cache" />
+    <None Include="03_Demo\反射demo\WindowsForms\DB.Interface\obj\Debug\DB.Interface.csprojResolveAssemblyReference.cache" />
+    <None Include="03_Demo\反射demo\WindowsForms\DB.Interface\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="03_Demo\反射demo\WindowsForms\DB.Oracle\obj\Debug\DB.Oracle.csprojResolveAssemblyReference.cache" />
+    <None Include="03_Demo\反射demo\WindowsForms\DB.Oracle\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\obj\Debug\DB.SQLserver.csprojResolveAssemblyReference.cache" />
+    <None Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="03_Demo\反射demo\WindowsForms\ConsoleApplication\obj\Debug\TempPE\" />
+    <Folder Include="03_Demo\反射demo\WindowsForms\DB.Interface\bin\Release\" />
+    <Folder Include="03_Demo\反射demo\WindowsForms\DB.Interface\obj\Debug\TempPE\" />
+    <Folder Include="03_Demo\反射demo\WindowsForms\DB.Oracle\bin\Release\" />
+    <Folder Include="03_Demo\反射demo\WindowsForms\DB.Oracle\obj\Debug\TempPE\" />
+    <Folder Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\bin\Release\" />
+    <Folder Include="03_Demo\反射demo\WindowsForms\DB.SQLserver\obj\Debug\TempPE\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
