@@ -7,7 +7,7 @@ exp dhzfjc/dhzfjc@10.1.52.101/tlh file=d:/a.dmp  log=d:/a.log
  alter system kill session '134,4519';
 
 --删除用户:
-drop user DHZFJC cascade;
+drop user DHZFJC cascade; 
 
 --删除表空间格式：
 DROP TABLESPACE DHZFJC 
