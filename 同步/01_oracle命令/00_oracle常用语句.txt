@@ -17,7 +17,7 @@ INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS
 --创建表空间
 CREATE TABLESPACE DHZFJC
     LOGGING 
-    DATAFILE 'D:\app\Administrator\oradata\tlh\DHZFJC.ora' SIZE 50M REUSE 
+    DATAFILE 'D:\app\Administrator\oradata\orcl\DHZFJC.ora' SIZE 50M REUSE 
     AUTOEXTEND 
     ON NEXT  10M MAXSIZE UNLIMITED EXTENT MANAGEMENT LOCAL;
 
@@ -53,6 +53,9 @@ select 'ALTER TABLE '|| table_name ||' move lob ('|| column_name||') store as (t
 
 --修改不可用的索：执行[移动lob字段]可能会导致索引不可用，则执行下面的语句，导致索引不可用也可能是先执行了2，再执行3，可能反过来执行就可以，没试过
 select 'alter index '||index_name||' rebuild' from dba_indexes where status='UNUSABLE'
+
+--去除大小写敏感
+alter system set sec_case_sensitive_logon=false;
 
 --允许导出空表
 alter system set deferred_segment_creation=false;
